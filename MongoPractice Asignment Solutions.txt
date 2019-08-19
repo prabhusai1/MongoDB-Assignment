@@ -256,3 +256,10 @@ db.comments.find({username:"ScumbagSteve"}).pretty()
 46) find all comments belonging to the post "Reports a bug in your code"
 db.comments.find({post: ObjectId("5d5a8e7f08065370d08d32d3")})
 
+
+47) how to export collection to JSON
+mongoexport -d mongo_practice -c myOwn -o C:\Users\prabhkot\Desktop\assignment.json
+
+48) how to import collection from JSON
+mongoimport -d mongo_practice -c myRental --file C:\Users\prabhkot\Desktop\assignment.json
+
